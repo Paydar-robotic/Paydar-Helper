@@ -1,4 +1,4 @@
-# [BDHelper](https://t.me/Paydar_roboticbot)
+# [Paydar-Helper](https://t.me/Paydar_roboticbot)
 
 [![Bot API](http://img.shields.io/badge/Bot%20API-v3.0.0-00aced.svg)](https://core.telegram.org/bots/api)
 [![https://t.me/PaydarTeam](https://img.shields.io/badge/💬%20Telegram-PaydarTeam-00aced.svg)](https://t.me/PaydarTeam)
