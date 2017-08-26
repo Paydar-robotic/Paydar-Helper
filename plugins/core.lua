@@ -70,7 +70,7 @@ local lang = redis:get(hash)
 			{text = '📁 درباره ما ', callback_data = '/beyond:'..GP_id}
 		},
 		{
-			{text= ''🔙 بازگشت' ,callback_data = '/lang:'..GP_id}
+			{text= '🔙 بازگشت' ,callback_data = '/lang:'..GP_id}
 		}				
 	}
   end
@@ -345,7 +345,7 @@ local lang = redis:get(hash)
 			{text = '🔛 تنظیمات بیشتر ', callback_data = '/moresettings:'..GP_id}
 		},
 		{
-			{text = ''🔙 بازگشت ', callback_data = '/option:'..GP_id}
+			{text = '🔙 بازگشت', callback_data = '/option:'..GP_id}
 		}				
 	}
   end
@@ -581,7 +581,7 @@ local lang = redis:get(hash)
 			{text = mute_keyboard, callback_data="/mutekeyboard:"..GP_id}
 		},
 		{
-			{text = ''🔙 بازگشت ', callback_data = '/option:'..GP_id}
+			{text = '🔙 بازگشت', callback_data = '/option:'..GP_id}
 		}				
 	}
   end
@@ -1197,7 +1197,7 @@ if matches[1] == '/flooddown' then
 				flood_max = data[tostring(matches[2])]['settings']['num_msg_max']
 			end
 		end
-		if tonumber(flood_max) 🔹 2 then
+		if tonumber(flood_max) > 2 then
 			flood_max = tonumber(flood_max) - 1
 			data[tostring(matches[2])]['settings']['num_msg_max'] = flood_max
 			save_data(_config.moderation.data, data)
@@ -1253,7 +1253,7 @@ if matches[1] == '/chardown' then
 				char_max = data[tostring(matches[2])]['settings']['set_char']
 			end
 		end
-		if tonumber(char_max) 🔹 2 then
+		if tonumber(char_max) > 2 then
 			char_max = tonumber(char_max) - 1
 			data[tostring(matches[2])]['settings']['set_char'] = char_max
 			save_data(_config.moderation.data, data)
@@ -1867,7 +1867,7 @@ if matches[1] == '/more' then
 				{text = "🎊 نمایش پیام خوشامد", callback_data="/showwlc:"..matches[2]},
 			},
 			{ 
-				{text = "'🔙 بازگشت به تنظیمات کلی", callback_data="/option:"..matches[2]}
+				{text = "🔙 بازگشت به تنظیمات کلی", callback_data="/option:"..matches[2]}
 			}
 		}
   end
@@ -1918,7 +1918,7 @@ if matches[1] == '/ownerlist' then
 				{text = "🔹 برکناری تمام مالکین", callback_data="/cleanowners:"..matches[2]}
 			},
 			{ 
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -1962,7 +1962,7 @@ if matches[1] == '/cleanowners' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "'🔙 بازگشت", callback_data="/ownerlist:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/ownerlist:"..matches[2]}
 			}
 		}
    end
@@ -2013,7 +2013,7 @@ if matches[1] == '/filterlist' then
 				{text = "🔹 پاک کردن", callback_data="/cleanfilterlist:"..matches[2]}
 			},
 			{ 
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2057,7 +2057,7 @@ if matches[1] == '/cleanfilterlist' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "'🔙 بازگشت", callback_data="/filterlist:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/filterlist:"..matches[2]}
 			}
 		}
   end
@@ -2108,7 +2108,7 @@ if matches[1] == '/modlist' then
 				{text = "🔹 برکناری تمام مدیران", callback_data="/cleanmods:"..matches[2]}
 			},
 			{ 
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2193,7 +2193,7 @@ if matches[1] == '/bans' then
 				{text = "🔹 پاک کردن لیست بن ", callback_data="/cleanbans:"..matches[2]}
 			},
 			{ 
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2243,7 +2243,7 @@ if matches[1] == '/silentlist' then
 				{text = "🔹 پاک کردن لیست سایلنت", callback_data="/cleansilentlist:"..matches[2]}
 			},
 			{ 
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2286,7 +2286,7 @@ if matches[1] == '/cleansilentlist' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "'🔙 بازگشت", callback_data="/silentlist:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/silentlist:"..matches[2]}
 			}
 		}
   end
@@ -2329,7 +2329,7 @@ if matches[1] == '/cleanbans' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "'🔙 بازگشت", callback_data="/bans:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/bans:"..matches[2]}
 			}
 		}
   end
@@ -2369,7 +2369,7 @@ if matches[1] == '/link' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2416,7 +2416,7 @@ if matches[1] == '/rules' then
 				{text = "🔹 پاک کردن", callback_data="/cleanrules:"..matches[2]}
 			},
 			{ 
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
   end
@@ -2458,7 +2458,7 @@ if matches[1] == '/cleanrules' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "'🔙 بازگشت", callback_data="/rules:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/rules:"..matches[2]}
 			}
 		}
   end
@@ -2507,7 +2507,7 @@ end
 				{text = "🔹 حذف لیست سفید", callback_data="/cleanwhitelists:"..matches[2]}
 			},
 			{ 
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
 		end
@@ -2552,7 +2552,7 @@ if matches[1] == '/cleanwhitelists' then
 				keyboard.inline_keyboard = {
 
 			{ 
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
 		end
@@ -2598,7 +2598,7 @@ if not is_mod1(matches[2], msg.from.id) then
 				{text = "🔹 حذف پیام خوشامد", callback_data="/cleanwlcmsg:"..matches[2]}
 			},
 			{ 
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
 		end
@@ -2642,7 +2642,7 @@ local keyboard = {}
 				keyboard.inline_keyboard = {
 
 			{ 
-				{text = "'🔙 بازگشت", callback_data="/more:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/more:"..matches[2]}
 			}
 		}
 		end
@@ -2677,7 +2677,7 @@ if matches[1] == '/beyond' then
 			{text = '🌐 گیت هاب تیم ', url = 'https://www.github.com/PaydarTeam'}
 		},
 		{
-			{text= ''🔙 بازگشت' ,callback_data = '/option:'..matches[2]}
+			{text= '🔙 بازگشت' ,callback_data = '/option:'..matches[2]}
 		}				
 	}
    end
@@ -2708,7 +2708,7 @@ _》_*Lua*, *Cli* `and` *Api* _Bots_
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "'🔙 بازگشت", callback_data="/beyond:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/beyond:"..matches[2]}
 			}
 		}
   end
@@ -2738,7 +2738,7 @@ _》PvResan :_ [Paydar Pv](Telegram.Me/Paydar_projectbot)
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "'🔙 بازگشت", callback_data="/beyond:"..matches[2]}
+				{text = "🔙 بازگشت", callback_data="/beyond:"..matches[2]}
 			}
 		}
   end
