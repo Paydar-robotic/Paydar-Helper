@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME/BDHelper
+cd $HOME/Paydar-Helper
 
 install() {
 		sudo apt-get update
@@ -47,7 +47,7 @@ function beyondteam() {
 	white "     >>>>                       We Are Programmer                               "
 	white "     >>>>                       We Are The Best                                 "
 	red   "     >>>>                       We Are Family                                   "
-	red   "     >>>>                       @BeyondTeam                                     "
+	red   "     >>>>                       @PaydaeTeam                                     "
 	echo -e "\e[0m"
 }
 
@@ -78,7 +78,7 @@ else
 	print_logo
 	beyondteam
 	logo_play
-	green "Beyond Helper Bot running..."
+	green "Paydar Helper Bot running..."
 	#sudo service redis-server restart
 	lua ./bot/bot.lua
 fi
