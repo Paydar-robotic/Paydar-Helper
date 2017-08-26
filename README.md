@@ -1,10 +1,10 @@
-# [BDHelper](https://t.me/BDHelperBot)
+# [BDHelper](https://t.me/Paydar_roboticbot)
 
 [![Bot API](http://img.shields.io/badge/Bot%20API-v3.0.0-00aced.svg)](https://core.telegram.org/bots/api)
-[![https://t.me/BeyondTeam](https://img.shields.io/badge/💬%20Telegram-BeyondTeam-00aced.svg)](https://t.me/BeyondTeam)
+[![https://t.me/PaydarTeam](https://img.shields.io/badge/💬%20Telegram-PaydarTeam-00aced.svg)](https://t.me/PaydarTeam)
 
-## Beyond Helper V1.5
-An Helper Bot For BDReborn Based On BDMessenger
+## Paydar Helper V1.5
+An Helper Bot For Paydar Based On PaydarTeam
 
 * * *
 
@@ -19,15 +19,15 @@ An Helper Bot For BDReborn Based On BDMessenger
 ```sh
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/BeyondTeam/BDHelper.git
-cd BDHelper
-chmod +x beyond.sh
-./beyond.sh install
-./beyond.sh 
+git clone https://github.com/Paydar-robotic/Paydar-Helper.git
+cd Paydar-Helper
+chmod +x paydar.sh
+./paydar.sh install
+./paydar.sh 
 
 
 # For Auto Launch:
-cd BDHelper
+cd Paydar-Helper
 chmod 777 autobd.sh
 tmux
 ./autobd.sh
@@ -36,7 +36,7 @@ tmux
 ### One command
 To install everything in one command, use:
 ```sh
-cd $HOME && git clone https://github.com/BeyondTeam/BDHelper.git && cd BDHelper && chmod +x beyond.sh && ./beyond.sh install && ./beyond.sh
+cd $HOME && git clone Paydar-Helper.git && cd Paydar-Helper && chmod +x paydar.sh && ./paydar.sh install && ./paydar.sh
 ```
 
 # Support and Development
@@ -45,16 +45,11 @@ More information [Beyond Global Chat](https://telegram.me/joinchat/AAAAAEIDQ8HT
 
 # Special thanks to
 
-[@AmirBagheri](https://github.com/CodeLua)
+[PaydarTeam](https://github.com/PaydarTeam)
 
 * * *
 
-# Developers!
-
-[SoLiD](https://github.com/solid021) ([Telegram](https://t.me/SoLiD))
-
-[ToOfan](https://github.com/To0fan) ([Telegram](https://t.me/ToOfan))
 
 ### Our Telegram channel:
 
-[@BeyondTeam](https://t.me/BeyondTeam)
+[PaydarTeam](https://t.me/PaydarTeam)
