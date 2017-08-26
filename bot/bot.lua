@@ -1,8 +1,8 @@
 package.path = package.path..';.luarocks/share/lua/5.2/?.lua;.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath..';.luarocks/lib/lua/5.2/?.so'
-bot_token = "Token" --Put You Token Here
+bot_token = "386333871:AAE_1kqoaCnDCW0JnGp_0xVMr2SKQl-XjeA" --Put You Token Here
 send_api = "https://api.telegram.org/bot"..bot_token
-sudo_id = 157059515
+sudo_id = 104657260
 require('./bot/methods')
 require('./bot/utils')
 require('./libs/JSON')
@@ -162,28 +162,23 @@ function create_config( )
     "core",
     "plugins"
     },
-    sudo_users = {157059515},--Sudo users
+    sudo_users = {104657260,145521495},--Sudo users
     admins = {},
     disabled_channels = {},
     moderation = {data = ''..BeyondTeam..'/data/moderation.json'},
-    info_text = [[*》Beyond Helper Bot V1.5*
-`》An helper bot of` *BDReborn* `based on` *BDMessenger*
+    info_text = [[*》Paydar Helper Bot V1.5*
+`》An helper bot of` *Paydar Bot* `based on` *BDMessenger*
 
-》[Beyond Helper](https://github.com/BeyondTeam/BDHelper)
+》[Beyond Helper](https://github.com/PaydarTeam)
 
 *》Admins :*
-*》Founder & Developer :* [SoLiD](Telegram.Me/SoLiD)
-_》Developer :_ [ToOfan](Telegram.Me/ToOfan)
-_》Developer & Sponser :_ [MAKAN](Telegram.Me/MAKAN)
-
+*》Founder & Developer :* [Omid](Telegram.Me/OMid_Paydar)
+		
 *》Special thanks to :*
-》[Amir Bagheri](Telegram.Me/CodeLua)
+》[Paydar Robotic Team](Telegram.Me/PaydarTeam)
 
 *》Our channel :*
-》[BeyondTeam](Telegram.Me/BeyondTeam)
-
-*》Our Site :*
-》[BeyondTeam](BeyondTeam.ir)
+》[PaydarTeam](Telegram.Me/Paydarteam)
 ]],
   }
   serialize_to_file(config, './data/config.lua')
