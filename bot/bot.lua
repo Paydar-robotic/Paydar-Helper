@@ -1,6 +1,6 @@
 package.path = package.path..';.luarocks/share/lua/5.2/?.lua;.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath..';.luarocks/lib/lua/5.2/?.so'
-bot_token = "386333871:AAE_1kqoaCnDCW0JnGp_0xVMr2SKQl-XjeA" --Put You Token Here
+bot_token = "386333871:AAGcioQOfJDeop3y_3ZCn5jckV6pRR3eKH4" --Put You Token Here
 send_api = "https://api.telegram.org/bot"..bot_token
 sudo_id = 104657260
 require('./bot/methods')
@@ -152,9 +152,9 @@ function create_config( )
 	server_user = string.gsub(server_user, '%s+$', '')
 	server_user = string.gsub(server_user, '[\n\r]+', ' ') 
 	if server_user:match("^root$") then
-		BeyondTeam = '/root/BDReborn'
+		BeyondTeam = '/root/Paydar'
 	elseif not server_user:match("^root$") then
-		BeyondTeam = '/home/'..server_user..'/BDReborn'
+		BeyondTeam = '/home/'..server_user..'/Paydar'
 	end
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
